@@ -1,4 +1,4 @@
-Instructions to start up the webserver:
+Instructions to launch the webserver:
 
 1) Launch the virtual environment from the root git directory: source venv/bin/activate
 2) Enter the project directory: cd mysite

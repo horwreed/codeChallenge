@@ -53,6 +53,7 @@ def zscore(request, signal_id):
         zscores = []
 
         while front >= 0:
+            #could be worth it to use a queue here, I thought this was a little bit more straightforward though
             signal_values = [signal.get_value() for signal in signals[front:back + 1]]
             zscore = (signals[back].get_value() - mean(signal_values)) / stdev(signal_values)
             row = {}
